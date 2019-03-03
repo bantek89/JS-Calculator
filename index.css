@@ -1,0 +1,73 @@
+@font-face {
+  	font-family: 'digital-7';
+	src: url('digital-7.mono.ttf');
+}
+
+html, body {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 0;
+	font-family: 'digital-7', sans-serif;
+	font-size: 180%;
+}
+
+body {
+	background-color: #e6caaa;
+	transition: 0.3s;
+	height: 100%;
+}
+
+.grid-container {
+	background-image: url(background01.jpg);
+	background-size: 100vh;
+	background-repeat:no-repeat;
+	background-position: center center;
+	margin: 0 auto;
+	padding: auto;
+	display: grid;
+	grid-template: auto / 1fr 1fr 1fr 1fr;
+	height: 80vh;
+ 	width: 30vw;
+}
+
+.grid-item {
+	border-radius: 10px;
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.2);
+	border-style: outset;
+	color: black;
+	vertical-align: middle;
+	text-align: center;
+	transition: 0.1s;
+}
+
+.grid-item:hover {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#displayBox:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#displayBox {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	border-style: inset;
+	border-bottom: none;
+	text-align: right;
+	font-size: 190%;
+}
+
+.clear {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: left;
+}
+
+.equals {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	text-align: center;
+}
